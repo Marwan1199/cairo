@@ -1,0 +1,8 @@
+---
+- name: Web Server Setup
+  hosts: all
+  become: yes
+  roles:
+    - packages
+    - users
+    - directories
